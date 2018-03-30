@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.canplay.repast_wear.mvp.activity.LoginActivity">
+    <ImageView
+
+        android:id="@+id/tv_logo"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp" />
+   <LinearLayout
+       android:layout_marginLeft="25dp"
+       android:layout_marginRight="25dp"
+       android:layout_below="@+id/tv_logo"
+       android:layout_marginTop="60dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <LinearLayout
+           android:background="@drawable/login_w"
+           android:gravity="center_vertical"
+           android:layout_width="match_parent"
+           android:layout_height="65dp"
+           android:orientation="horizontal">
+           <ImageView
+               android:src="@drawable/yonghu"
+               android:layout_marginLeft="19dp"
+               android:layout_width="20dp"
+               android:layout_height="20dp" />
+           <com.canplay.repast_wear.view.ClearEditText
+               android:textSize="14sp"
+               android:layout_marginLeft="12dp"
+               android:layout_marginRight="12dp"
+               android:layout_width="fill_parent"
+               android:layout_height="35dp"
+               android:background="@null"
+               android:gravity="center_vertical"
+               android:text=""
+               android:hint="用户名"
+               android:id="@+id/et_user"
+               android:maxLength="11"
+               android:textColor="@color/slow_black"
+               android:textColorHint="@color/blue"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:background="@drawable/login_w"
+           android:layout_marginTop="5dp"
+           android:gravity="center_vertical"
+           android:layout_width="match_parent"
+           android:layout_height="65dp"
+           android:orientation="horizontal">
+           <ImageView
+               android:src="@drawable/suo"
+               android:layout_marginLeft="19dp"
+               android:layout_width="20dp"
+               android:layout_height="20dp" />
+           <com.canplay.repast_wear.view.ClearEditText
+               android:textSize="14sp"
+               android:layout_marginLeft="12dp"
+               android:id="@+id/et_pws"
+               android:layout_width="fill_parent"
+               android:layout_height="35dp"
+               android:background="@null"
+               android:gravity="center_vertical"
+               android:text=""
+               android:hint="请输入密码"
+               android:layout_marginRight="12dp"
+               android:inputType="textPassword"
+               android:maxLength="11"
+               android:textColor="@color/slow_black"
+               android:textColorHint="@color/blue"/>
+
+       </LinearLayout>
+       <TextView
+           android:id="@+id/tv_login"
+           android:background="@drawable/login"
+           android:textSize="16sp"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:text="登陆"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="65dp" />
+   </LinearLayout>
+</RelativeLayout>

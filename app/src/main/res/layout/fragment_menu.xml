@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.001dp"
+        android:id="@+id/line"/>
+<com.canplay.repast_wear.view.NavigationBar
+    app:navigationTitle="菜单管理"
+    app:navigationRight_type="img"
+    app:navigationLeft_type="gone"
+    android:id="@+id/navigationBar"
+    app:right_img="@drawable/caipin_add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/rl_menu"
+        style="@style/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:visibility="visible" />
+</LinearLayout>
